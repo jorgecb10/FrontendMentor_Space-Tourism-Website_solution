@@ -235,14 +235,8 @@
   .block {
     display: block;
   }
-  .contents {
-    display: contents;
-  }
   .flex {
     display: flex;
-  }
-  .table {
-    display: table;
   }
   .aspect-4\/2\.5 {
     aspect-ratio: 4/2.5;
@@ -385,10 +379,6 @@
   }
   .opacity-50 {
     opacity: 50%;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .before\:absolute {
     &::before {
@@ -698,26 +688,6 @@
   .lg\:text-\[1\.28em\] {
     @media (width >= 64rem) {
       font-size: 1.28em;
-    }
-  }
-  .xl\:absolute {
-    @media (width >= 80rem) {
-      position: absolute;
-    }
-  }
-  .xl\:right-0 {
-    @media (width >= 80rem) {
-      right: calc(var(--spacing) * 0);
-    }
-  }
-  .xl\:bottom-40 {
-    @media (width >= 80rem) {
-      bottom: calc(var(--spacing) * 40);
-    }
-  }
-  .xl\:left-0 {
-    @media (width >= 80rem) {
-      left: calc(var(--spacing) * 0);
     }
   }
   .xl\:m-0 {
@@ -1301,7 +1271,7 @@
   animation: elementEnter 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) forwards;
 }
 .element-leaving {
-  animation: elementLeave 0.4s ease-in forwards;
+  animation: elementLeave 0.35s ease-in forwards;
 }
 main {
   animation: fadeInPage 0.5s ease forwards;
@@ -1333,11 +1303,6 @@ main {
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-content {
   syntax: "*";
@@ -1373,7 +1338,6 @@ main {
     *, ::before, ::after, ::backdrop {
       --tw-font-weight: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-content: "";
       --tw-translate-x: 0;
       --tw-translate-y: 0;

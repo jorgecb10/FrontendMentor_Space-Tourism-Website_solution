@@ -273,7 +273,7 @@
     animation: elementEnter 0.7s cubic-bezier(0.34, 1.2, 0.64, 1) forwards; 
 }
 .element-leaving  { 
-    animation: elementLeave 0.4s ease-in forwards; 
+    animation: elementLeave 0.35s ease-in forwards; 
 }
 
 /* Entrada inicial */
