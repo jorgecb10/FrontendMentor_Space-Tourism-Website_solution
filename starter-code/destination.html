@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="destination">
+  <header class="header">
+    <div class="header__content">
+      <a href="index.html">
+        <img class="header__logo" src="assets/shared/logo.svg" alt="logo">
+      </a>
+
+      <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="header__icon--hamburger">
+
+      <nav class="navigation">
+        <ul class="navigation__ul">
+          <li class="navigation__li">
+            <a href="index.html" class="navigation__a"><span class="navigation__span">00</span> Home</a>
+          </li>
+          <li class="navigation__li">
+            <a href="destination.html" class="navigation__a active"><span class="navigation__span">01</span> Destination</a>
+          </li>
+          <li class="navigation__li">
+            <a href="crew.html" class="navigation__a"><span class="navigation__span">02</span> Crew</a>
+          </li>
+          <li class="navigation__li">
+            <a href="technology.html" class="navigation__a"><span class="navigation__span">03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <p class="container text-white font-barlow-condensed uppercase tracking-widest flex gap-5 justify-center md:text-[1.25em] md:justify-start lg:text-[1.28em] pt-8 md:pt-12 xl:p-0">
+      <span class="text-white/25 font-bold">01</span>Pick your destination
+    </p>
+  </section>
+
+  <main class="mt-10 flex-1 flex items-center lg:mt-0">
+    <div class="container">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center">
+        <picture>
+          <source
+            srcset="assets/destination/image-moon.webp" 
+            type="image/webp"
+            id="planet-img-webp">
+          <source 
+            srcset="assets/destination/image-moon.png" 
+            type="image/png"
+            id="planet-img-png">
+          <img id="planet-img" loading="lazy" src="assets/destination/image-moon.png" decoding="async" lazyalt="imagen" class="mx-auto mt-14 w-1/2 md:w-[35%] lg:w-full lg:m-0 xl:w-[70%] xl:mx-auto">
+        </picture>
+
+        <!-- Info panel -->
+        <div class="dest-info xl:w-[70%]">
+          <!-- Sub-nav tabs -->
+          <ul class="dest-tabs mb-8 flex text-blue-300 uppercase items-center justify-evenly mt-14 font-barlow-condensed tracking-widest md:w-[40%] md:mx-auto md:justify-between md:mb-4 md:mt-20 lg:justify-start lg:m-0 lg:mb-6 lg:w-full lg:gap-6">
+            <li><a class="dest-tab active" data-dest="moon">Moon</a></li>
+            <li><a class="dest-tab" data-dest="mars">Mars</a></li>
+            <li><a class="dest-tab" data-dest="europa">Europa</a></li>
+            <li><a class="dest-tab" data-dest="titan">Titan</a></li>
+          </ul>
+
+          <!-- Elementos con IDs para que JS los actualice -->
+          <div class="dest-content">
+            <h2 id="dest-name" class="text-[3.5em] text-white text-center font-bellefair uppercase md:text-[5em] lg:text-left">Moon</h2>
+            <p id="dest-desc" class="text-blue-300 text-center font-barlow md:w-[75%] md:mx-auto lg:mx-0 lg:text-left lg:w-full">
+              See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+            </p>
+
+            <div class="dest-divider bg-white/25 py-px my-7 md:w-[75%] md:mx-auto lg:w-full"></div>
+            
+            <div class="dest-stats flex flex-col gap-4 items-center text-center uppercase md:grid md:grid-cols-2 lg:text-left">
+              <div>
+                <p class="text-blue-300 font-barlow-condensed tracking-widest">Avg. distance</p>
+                <p id="dest-distance" class="text-[1.75em] font-bellefair text-white">384,400 km</p>
+              </div>
+              <div>
+                <p class="text-blue-300 font-barlow-condensed tracking-widest">Est. travel time</p>
+                <p id="dest-travel" class="text-[1.75em] font-bellefair text-white">3 days</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /dest-info -->
+      </div><!-- /dest-layout -->
+    </div><!-- /container -->
+  </main>
+
+  <script src="src/js/app.js" type="module"></script>
+</body>
+</html>

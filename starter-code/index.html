@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="index">
+  <header class="header">
+    <div class="header__content">
+      <a href="index.html">
+        <img class="header__logo" src="assets/shared/logo.svg" alt="logo">
+      </a>
+
+      <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="header__icon--hamburger">
+
+      <nav class="navigation">
+        <ul class="navigation__ul">
+          <li class="navigation__li">
+            <a href="index.html" class="navigation__a active"><span class="navigation__span">00</span> Home</a>
+          </li>
+          <li class="navigation__li">
+            <a href="destination.html" class="navigation__a"><span class="navigation__span">01</span> Destination</a>
+          </li>
+          <li class="navigation__li">
+            <a href="crew.html" class="navigation__a"><span class="navigation__span">02</span> Crew</a>
+          </li>
+          <li class="navigation__li">
+            <a href="technology.html" class="navigation__a"><span class="navigation__span">03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mt-12 md:mt-24 xl:m-0">
+    <div class="xl:grid xl:grid-cols-2 xl:items-center xl:absolute xl:bottom-40 xl:right-0 xl:left-0 container">
+      <div>
+        <div class="flex flex-col items-center xl:items-start">
+          <h1 class="index__heading">So, you want to travel to</h1>
+          <span class="index__heading--span">Space</span>
+        </div>
+      
+        <p class="w-[80%] mx-auto lg:w-[60%] xl:w-[85%] text-center xl:text-left xl:m-0 index__text">
+          Let’s face it; if you want to go to space, you might as well genuinely go to 
+          outer space and not hover kind of on the edge of it. Well sit back, and relax 
+          because we’ll give you a truly out of this world experience!
+        </p>
+      </div>
+
+      <div class="text-center xl:text-right">
+        <button class="btn__explore relative bg-white border-none rounded-full w-36 h-36 cursor-pointer mt-32 text-[1.125em] uppercase font-bellefair before:content-[''] before:absolute before:z-[-2] before:rounded-full md:w-[8em] md:h-[8em] md:mt-24 md:text-[2em] xl:m-0">Explore</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="src/js/app.js" type="module"></script>
+</body>
+</html>

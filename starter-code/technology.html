@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="technology">
+  <header class="header">
+    <div class="header__content">
+      <a href="index.html">
+        <img class="header__logo" src="assets/shared/logo.svg" alt="logo">
+      </a>
+
+      <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="header__icon--hamburger">
+
+      <nav class="navigation">
+        <ul class="navigation__ul">
+          <li class="navigation__li">
+            <a href="index.html" class="navigation__a"><span class="navigation__span">00</span> Home</a>
+          </li>
+          <li class="navigation__li">
+            <a href="destination.html" class="navigation__a"><span class="navigation__span">01</span> Destination</a>
+          </li>
+          <li class="navigation__li">
+            <a href="crew.html" class="navigation__a"><span class="navigation__span">02</span> Crew</a>
+          </li>
+          <li class="navigation__li">
+            <a href="technology.html" class="navigation__a active"><span class="navigation__span">03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <p class="container text-white font-barlow-condensed uppercase tracking-widest flex gap-5 justify-center md:text-[1.25em] md:justify-start lg:text-[1.28em] pt-8 md:pt-12 xl:p-0">
+      <span class="text-white/25 font-bold">03</span>Space launch 101
+    </p>
+  </section>
+
+  <main class="flex-1 flex items-center justify-center">
+    <div class="lg:grid lg:grid-cols-2 lg:items-center lg:justify-items-end">
+      <img id="vehicle-img" src="assets/technology/image-launch-vehicle-portrait.jpg" alt="image-vehicle" class="w-full block aspect-4/2.5 md:aspect-21/9 lg:aspect-square lg:w-auto object-fill lg:col-span-1 lg:col-start-2 lg:col-end-3">
+
+      <div class="max-w-325 w-[90%] mx-auto lg:col-span-1 lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:max-w-162.5 lg:w-[80%] xl:w-[90%] 2xl:w-full">
+        <!-- Info panel -->
+        <div class="tech-info lg:w-full xl:flex xl:items-center xl:gap-12">
+          <!-- Sub-nav tabs -->
+          <ul class="tech-tabs mt-8 flex justify-center items-center gap-5 font-bellefair lg:justify-start xl:flex-col xl:items-start xl:m-0 xl:gap-8">
+            <li class="w-10 h-10 md:w-14 md:h-14 xl:w-20 xl:h-20"><a class="tech-tab active" data-tech="launch">1</a></li>
+            <li class="w-10 h-10 md:w-14 md:h-14 xl:w-20 xl:h-20"><a class="tech-tab" data-tech="spaceport">2</a></li>
+            <li class="w-10 h-10 md:w-14 md:h-14 xl:w-20 xl:h-20"><a class="tech-tab" data-tech="space">3</a></li>
+          </ul>
+
+          <div class="tech-content mt-10 xl:m-0">
+            <p class="text-lg md:text-2xl min-[1440px]:text-[2em] text-white opacity-50 font-bellefair uppercase text-center lg:text-left">The terminology...</p>
+            <h2 id="tech-name" class="text-[1.5em] text-white text-center font-bellefair uppercase md:text-[2.5em] lg:text-left min-[1440px]:text-[3.5em]">Launch vehicle</h2>
+            <p id="tech-desc" class="mt-6 text-blue-300 text-center font-barlow md:w-[75%] md:mx-auto lg:mx-0 lg:text-left lg:w-full">
+              DA launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+              WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+              it's quite an awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div><!-- /crew-info -->
+      </div><!-- /crew-layout -->
+    </div><!-- /container -->
+  </main>
+
+  <script src="src/js/app.js" type="module"></script>
+</body>
+</html>

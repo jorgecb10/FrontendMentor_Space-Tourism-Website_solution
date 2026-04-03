@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="crew">
+  <header class="header">
+    <div class="header__content">
+      <a href="index.html">
+        <img class="header__logo" src="assets/shared/logo.svg" alt="logo">
+      </a>
+
+      <img src="assets/shared/icon-hamburger.svg" alt="icon-hamburger" class="header__icon--hamburger">
+
+      <nav class="navigation">
+        <ul class="navigation__ul">
+          <li class="navigation__li">
+            <a href="index.html" class="navigation__a"><span class="navigation__span">00</span> Home</a>
+          </li>
+          <li class="navigation__li">
+            <a href="destination.html" class="navigation__a"><span class="navigation__span">01</span> Destination</a>
+          </li>
+          <li class="navigation__li">
+            <a href="crew.html" class="navigation__a active"><span class="navigation__span">02</span> Crew</a>
+          </li>
+          <li class="navigation__li">
+            <a href="technology.html" class="navigation__a"><span class="navigation__span">03</span> Technology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <p class="container text-white font-barlow-condensed uppercase tracking-widest flex gap-5 justify-center md:text-[1.25em] md:justify-start lg:text-[1.28em] pt-8 md:pt-12 xl:p-0">
+      <span class="text-white/25 font-bold">02</span>Meet your crew
+    </p>
+  </section>
+
+  <main class="mt-14 flex-1 flex items-center lg:mt-0">
+    <div class="container">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center lg:relative">
+        <!-- Info panel -->
+        <div class="crew-info lg:w-full">
+          <div class="crew-content">
+            <p id="crew-heading" class="text-lg md:text-2xl min-[1440px]:text-[2em] text-white opacity-50 font-bellefair uppercase text-center lg:text-left">Commander</p>
+            <h2 id="crew-name" class="text-[1.5em] text-white text-center font-bellefair uppercase md:text-[2.5em] lg:text-left min-[1440px]:text-[3.5em]">Douglas Hurley</h2>
+            <p id="crew-bio" class="mt-6 text-blue-300 text-center font-barlow md:w-[75%] md:mx-auto lg:mx-0 lg:text-left lg:w-full">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+            </p>
+          </div>
+
+          <!-- Sub-nav tabs -->
+          <ul class="crew-tabs mb-8 flex items-center justify-center gap-7 mt-20 md:mt-14 lg:gap-12 lg:justify-start lg:my-0 lg:ml-2 lg:absolute lg:bottom-0">
+            <li><a class="crew-tab active" data-crew="douglas"></a></li>
+            <li><a class="crew-tab" data-crew="mark"></a></li>
+            <li><a class="crew-tab" data-crew="victor"></a></li>
+            <li><a class="crew-tab" data-crew="anousheh"></a></li>
+          </ul>
+        </div><!-- /crew-info -->
+
+        <picture>
+          <source
+            srcset="assets/crew/image-douglas-hurley.webp" 
+            type="image/webp"
+            id="avatar-img-webp">
+          <source 
+            srcset="assets/crew/image-douglas-hurley.png" 
+            type="image/png"
+            id="avatar-img-png">
+          <img id="avatar-img" loading="lazy" src="assets/crew/image-douglas-hurley.png" decoding="async" lazyalt="imagen" class="mx-auto mt-10 w-[70%] md:w-[50%] lg:w-full lg:m-0 xl:w-[70%] xl:mx-auto">
+        </picture>
+      </div><!-- /crew-layout -->
+    </div><!-- /container -->
+  </main>
+
+  <script src="src/js/app.js" type="module"></script>
+</body>
+</html>
